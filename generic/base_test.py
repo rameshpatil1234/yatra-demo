@@ -32,3 +32,5 @@ class BaseTest:
 
     def test_method(self):
         print('test merge')
+    def test_method1(self):
+        print('test merge1')
