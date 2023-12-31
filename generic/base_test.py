@@ -29,3 +29,8 @@ class BaseTest:
         wait = WebDriverWait(self.driver, 10)
         element = wait.until(EC.element_to_be_clickable((locator_type, locator)))
         return element
+
+    def test_method(self):
+        print('test merge')
+    def test_method1(self):
+        print('test merge1')
