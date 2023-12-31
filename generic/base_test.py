@@ -20,7 +20,6 @@ class BaseTest:
                 match = True
         time.sleep(2)
 
-
     def wait_for_presence_of_all_elements(self, locator_type, locator):
         wait = WebDriverWait(self.driver, 10)
         list_of_elements = wait.until(EC.presence_of_all_elements_located((locator_type, locator)))
@@ -30,3 +29,6 @@ class BaseTest:
         wait = WebDriverWait(self.driver, 10)
         element = wait.until(EC.element_to_be_clickable((locator_type, locator)))
         return element
+
+    def test_method(self):
+        print('test merge')
