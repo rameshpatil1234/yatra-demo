@@ -30,5 +30,4 @@ class BaseTest:
         element = wait.until(EC.element_to_be_clickable((locator_type, locator)))
         return element
 
-    def test_method(self):
-        print('test merge')
+    
